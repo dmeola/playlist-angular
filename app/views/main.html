@@ -1,0 +1,28 @@
+<div class="col-md-4">
+	<div class="playlist" style="border:1px solid #333; height:200px;">
+		<h3>Playlist</h3>
+		<div ng-repeat="video in playlistVideos" ng-model="playlistVideos" class="well">
+			{{video.name}}
+		</div>
+	</div>
+</div>
+
+<div class="col-md-4">
+	<form class="form-inline">
+			<div class="form-group">
+			<input type="text" placeholder="search youtube" class="form-control"></input>
+			<button class="btn btn-default" type="submit">Search</button>
+		</div>
+	</form>
+
+	<div ng-repeat="video in searchResults" ng-model="searchResults" class="well searchResults" ng-hide>
+		{{video.name}}
+	</div>
+
+</div>
+
+<div class="col-md-4">
+	<div class="playlist" style="border:1px solid #333; height:300px;">
+
+	</div>
+</div>
